@@ -322,8 +322,7 @@ h2 {
   flex-direction: row;
   gap: 30px;
   flex-wrap: nowrap;
-} 
-
+}
 
 .area-value {
   display: flex;
@@ -346,7 +345,7 @@ button {
   font-weight: 700;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 430px) {
   .header-line {
     display: none;
   }
