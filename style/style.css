@@ -1,0 +1,403 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box;
+  outline: 1.5px solid red; */
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+section {
+  padding: 0 calc(16px + (128 - 16) * ((100vw - 360px) / (1366 - 360)));
+}
+
+/*first-page*/
+.header {
+  padding-top: 12px;
+}
+.navigate {
+  padding-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap !important;
+}
+.header-line {
+  border-bottom: 1px solid #e3e8ed;
+}
+.repairAnd {
+  display: flex;
+  gap: 32px;
+  flex-wrap: nowrap;
+}
+.company-contact {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.contact-number {
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+  color: #97a1b0;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: black;
+  text-decoration: 5px underline black;
+  font-weight: bold;
+}
+.header-line-second {
+  padding-top: calc(12px + (24 - 12) * ((100vw - 360px) / (1366 - 360)));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 12px;
+}
+.header-logo {
+  width: calc(180px + (240 - 180) * ((100vw - 360px) / (1366 - 360)));
+}
+.repair-info {
+  display: flex;
+  gap: 24px;
+
+  font: bold;
+  font-weight: 700px;
+}
+.repair-calc {
+  font-family: "Inter", sans-serif;
+  background-color: #1a1a1a;
+  width: 224px;
+  height: 45px;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  font-weight: 700;
+  text-align: center;
+  line-height: 45px;
+  letter-spacing: 1px;
+}
+.phone-version-button {
+  display: none;
+}
+.phone-button {
+}
+.menu-button {
+}
+
+/*second-page*/
+
+.page2 {
+  padding-top: calc(48px + (64 - 48) * ((100vw - 360px) / (1366 - 360)));
+}
+h1 {
+  font: bold;
+  font-weight: 900px;
+  font-size: calc(34px + (64 - 34) * ((100vw - 360px) / (1366 - 360)));
+}
+.first-title-repair {
+}
+.page-one-text {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  padding-top: calc(24px + (32 - 24) * ((100vw - 360px) / (1366 - 360)));
+  line-height: calc(
+    22px + (27px - 22px) * ((100vw - 1366px) / (360px - 1366px))
+  );
+}
+.first-slider {
+  padding-top: calc(40px + (64 - 40) * ((100vw - 360px) / (1366 - 360)));
+  width: 100%;
+  height: 400px;
+}
+video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+.video-slider {
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.video-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  padding-top: calc(64px + (64 - 40) * ((100vw - 360px) / (1366 - 360)));
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: none;
+}
+
+video.active {
+  display: block;
+}
+
+button.prev,
+button.next {
+  position: absolute;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  bottom: 10px;
+}
+
+button.prev {
+  right: 60px;
+}
+
+button.next {
+  right: 10px;
+}
+
+.video-main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.video-main-page :nth-child(2) {
+}
+
+.slider-counter {
+  width: 58px;
+  bottom: 30px;
+  right: 10px;
+  background-color: none;
+  color: #97a1b0;
+
+  font-weight: lighter;
+  text-align: center;
+}
+
+.moscow-region-repair {
+  padding-top: calc(24px + (32 - 24) * ((100vw - 360px) / (1366 - 360)));
+  display: flex;
+  display: block;
+  font-size: 22px;
+}
+.apartments {
+  text-decoration: underline solid 1px #e3e8ed;
+}
+.apartments-sale {
+  padding-top: 12px;
+}
+
+/* third-page */
+
+.page3 {
+}
+h2 {
+  padding-top: calc(72px + (112 - 72) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: bolder !important;
+  font-size: 48px;
+  color: #1a1a1a;
+}
+
+.tabs {
+  padding-top: calc(32px + (56 - 32) * ((100vw - 375px) / (1280 - 375)));
+  padding-bottom: 15px;
+  border-bottom: 1px solid;
+  border-color: #e3e8ed;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.first-image-slider {
+  padding-top: 40px;
+}
+
+.first-image-slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider-wrapper {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider-item {
+  flex: 0 0 auto;
+  width: calc(272px + (350 - 272) * ((100vw - 375px) / (1280 - 375)));
+  height: calc(180px + (232 - 180) * ((100vw - 375px) / (1280 - 375)));
+  margin-right: calc(16px + (30 - 16) * ((100vw - 360px) / (1366 - 360)));
+}
+
+.first-image-slider::-webkit-scrollbar {
+  display: none;
+}
+
+/* fourth-page */
+.page4 {
+  margin-top: calc(150px + (222 - 150) * ((100vw - 360px) / (1366 - 360)));
+  background-color: #1a1a1a;
+  min-height: 100vh;
+}
+.partners {
+  padding-top: calc(56px + (64 - 56) * ((100vw - 375px) / (1280 - 375)));
+  font-size: calc(28px + (48 - 28) * ((100vw - 375px) / (1280 - 375)));
+  font-weight: bolder;
+  color: #ffffff;
+  padding-bottom: calc(40px + (48 - 40) * ((100vw - 375px) / (1280 - 375)));
+}
+
+.days-to {
+  /* padding-bottom: calc(56px + (64 - 56) * ((100vw - 375px) / (1280 - 375)));; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  gap: 30px;
+  height: 255px;
+}
+
+.white-numbers {
+  font-family: "Inter", sans-serif;
+  color: #ffffff;
+
+  font-size: 48px;
+  font-weight: 900;
+}
+.white-numbers-child {
+  padding-top: 4px;
+
+  font-size: 22px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.process {
+  padding-top: 16px;
+
+  color: #97a1b0;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* fifth-page */
+.our-projects {
+}
+.kitchen-picture {
+  width: calc(328px + (730 - 328) * ((100vw - 375px) / (1280 - 375)));
+  height: calc(210px + (304 - 210) * ((100vw - 375px) / (1280 - 375)));
+}
+.rooms-value {
+  padding-top: 40px;
+}
+.first-room {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+.repair-apartments {
+  font-weight: 700;
+}
+.repair-info-card {
+  padding-top: calc(24px + (32 - 24) * ((100vw - 375px) / (1280 - 375)));
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  width: 100%;
+}
+.second-room {
+  padding-top: calc(116px + (40 - 116) * ((100vw - 375px) / (1280 - 375)));
+
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  flex-wrap: nowrap;
+} 
+
+
+.area-value {
+  display: flex;
+  justify-content: baseline;
+}
+.repair-apartments-second {
+  color: #29abe2;
+  font-weight: 700;
+}
+button {
+  outline: none;
+}
+
+.more-projects {
+  margin-top: calc(50px + (40 - 50) * ((100vw - 375px) / (1280 - 375)));
+  background-color: white;
+  width: 287px;
+  height: 56px;
+
+  font-weight: 700;
+}
+
+@media (max-width: 360px) {
+  .header-line {
+    display: none;
+  }
+  .repair-info {
+    display: none;
+  }
+  .repair-calc {
+    display: none;
+  }
+  .phone-version-button {
+    display: block;
+  }
+  .header-line-second {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+  }
+  .phone-button button {
+    background-color: white;
+  }
+
+  .header-logo {
+    width: 180px;
+    height: 34.84px;
+  }
+  .video-page {
+  }
+  .tabs {
+    gap: 10px;
+  }
+  .page4 {
+  }
+  .days-to {
+    flex-wrap: wrap;
+  }
+  .first-room {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .second-room {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  .kitchen-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
