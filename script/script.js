@@ -71,3 +71,21 @@ function updateSlider() {
 
 // Запускаем автоматическую прокрутку каждые 3 секунды
 setInterval(moveSlider, 1500);
+
+
+
+// слайдер для 7 экрана
+// Инициализация Swiper
+var swiper = new Swiper('.swiper-container', {
+  slidesPerView: 1,  // Показывать по 1 слайду
+  loop: true,  // Зацикливание слайдов
+  autoplay: {
+    delay: 2000,  // Автоматическое переключение каждые 2 секунды
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  spaceBetween: 0,  // Нет пространства между слайдами
+  centeredSlides: true,  // Центрирование активного слайда
+});

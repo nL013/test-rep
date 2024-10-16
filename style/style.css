@@ -188,6 +188,7 @@ button.next {
 }
 .apartments {
   text-decoration: underline solid 1px #e3e8ed;
+  text-underline-offset: 8px;
 }
 .apartments-sale {
   padding-top: 12px;
@@ -343,6 +344,72 @@ button {
   height: 56px;
 
   font-weight: 700;
+}
+
+/* sixth-page */
+.group-to-help {
+  padding-top: calc(80px + (112 - 80) * ((100vw - 375px) / (1280 - 375)));
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+  flex-wrap: wrap;
+}
+h4 {
+  font-weight: bolder !important;
+  font-size: calc(28px + (48 - 28) * ((100vw - 375px) / (1280 - 375)));
+  color: #1a1a1a;
+
+  text-decoration: underline solid 1px #e3e8ed;
+  text-underline-offset: 12px;
+}
+.arrow-button img {
+  width: 48px;
+  height: 48px;
+}
+.audit {
+  padding-top: calc(16px + (24 - 16) * ((100vw - 375px) / (1280 - 375)));
+  color: #1a1a1a;
+}
+/* seveth-page */
+.swiper-container {
+  width: 100%;
+  max-width: 540px;
+  margin: 0 auto; /* Центрирование контейнера */
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.slider-img {
+  width: 100%;
+  height: auto;
+}
+
+.feedback-text {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.feedback-value {
+  display: block;
+  font-size: 14px;
+  color: gray;
+}
+
+/* Адаптивные стили */
+@media (max-width: 430px) {
+  .swiper-container {
+    max-width: 328px;
+  }
+
+  .slider-img {
+    height: 220px;
+  }
 }
 
 @media (max-width: 430px) {
