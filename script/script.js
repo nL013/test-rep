@@ -1,4 +1,4 @@
-// Слайдер
+// слайдер для видео
 const videos = document.querySelectorAll(".video-container video");
 const nextBtn = document.querySelector(".next");
 const prevBtn = document.querySelector(".prev");
@@ -35,57 +35,3 @@ prevBtn.addEventListener("click", () => {
 
 showVideo(currentIndex);
 
-// слайдер для фото
-const sliderWrapper = document.querySelector('.slider-wrapper');
-const sliderItems = document.querySelectorAll('.slider-item');
-let slideIndex = 0;
-
-function moveSlider() {
-  // Увеличиваем индекс слайда
-  slideIndex++;
-
-  // Если индекс достиг длины, сбрасываем его
-  if (slideIndex >= sliderItems.length / 2) {
-    slideIndex = 0;
-    // Сразу прокручиваем к первому элементу
-    // sliderWrapper.style.transition = 'none';
-    // sliderWrapper.style.transform = 'translateX(0)';
-    
-    // Позволяем браузеру перерисовать элемент
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        sliderWrapper.style.transition = 'transform 0.5s ease-in-out';
-        slideIndex++;
-        updateSlider();
-      });
-    });
-  } else {
-    updateSlider();
-  }
-}
-
-function updateSlider() {
-  // Прокручиваем слайдер на основании индекса
-  sliderWrapper.style.transform = `translateX(-${slideIndex * (300 + 16)}px)`; // 300 - ширина элемента, 16 - отступ
-}
-
-// Запускаем автоматическую прокрутку каждые 3 секунды
-setInterval(moveSlider, 1500);
-
-
-
-// слайдер для 7 экрана
-// Инициализация Swiper
-var swiper = new Swiper('.swiper-container', {
-  slidesPerView: 1,  // Показывать по 1 слайду
-  loop: true,  // Зацикливание слайдов
-  autoplay: {
-    delay: 2000,  // Автоматическое переключение каждые 2 секунды
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  spaceBetween: 0,  // Нет пространства между слайдами
-  centeredSlides: true,  // Центрирование активного слайда
-});
