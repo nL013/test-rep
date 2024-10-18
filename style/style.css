@@ -1,8 +1,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  outline: 1.5px solid red;
+  /* box-sizing: border-box;
+  outline: 1.5px solid red; */
 }
 body {
   font-family: "Inter", sans-serif;
